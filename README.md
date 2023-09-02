@@ -11,9 +11,9 @@ This is a personal portfolio website for Aarav Pant, a budding technologist, and
 - [About Me](#about-me)
 - [Skills](#skills)
 - [Projects](#projects)
-- [Recommendations](#recommendations)
-- [Contact](#contact)
-- [License](#license)
+
+
+
 
 ## About Me
 
