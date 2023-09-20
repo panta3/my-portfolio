@@ -4,6 +4,8 @@
   <title>Aarav Pant - Portfolio</title>
   <link rel="stylesheet" href="./style.css"/>
   <script src="./script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 </head>
 <body>
   <nav>
@@ -42,6 +44,30 @@
       </div>
     </div>
   </section>
+  <section class="work-experience-section">
+    <h2>Work Experience</h2>
+
+    <div class="work-card">
+        <h3>Intern - Zenit Excelencia</h3>
+        <p class="work-duration">Jul 2023 - Aug 2023 · 2 mos</p>
+        <p class="work-location">Delhi, India · Remote</p>
+        
+        <div class="work-description">
+            <p>
+                At Zenit Excelencia's IT department, I utilized Python Pandas for data challenges, primarily managing extensive Excel datasets. This enhanced the organization's data-driven decisions.
+            </p>
+            <p>
+                I contributed to user experience enhancement on Zenit's website, developing efficient course import/export mechanisms. This streamlined user interactions and boosted platform performance.
+            </p>
+        </div>
+        <p class="work-skills">
+            <strong>Skills:</strong> Pandas, Excel, Python, Problem Solving, Communication, Teamwork
+        </p>
+    </div>
+</section>
+
+
+
 
   <section id="skills">
     <h2>Skills</h2>
@@ -56,24 +82,35 @@
       <div class="skill">
         <img src="html_finalprojimages/html5.png"/>
         <h6>HTML</h6>
-        <p>4 months experience</p>
+        <p>6 months experience</p>
       </div>
+      <div class="skill">
+        <img src="html_finalprojimages/js.jpeg"/>
+        <h6>JavaScript</h6>
+        <p>6 months experience</p>
+      </div>
+
       <div class="skill">
         <img src="html_finalprojimages/CSS3.png"/>
         <h6>CSS</h6>
-        <p>4 months experience</p>
+        <p>6 months experience</p>
       </div>    
   
       <div class="skill">
         <img src="https://db.cs.uni-tuebingen.de/teaching/ws2223/sql-is-a-programming-language/logo.svg"/>
         <h6>SQL Database Management</h6>
-        <p>7 months experience</p>
+        <p>9 months experience</p>
       </div>  
   
       <div class="skill">
         <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"/>
         <h6>C Programming</h6>
-        <p>7 months experience</p>
+        <p>9 months experience</p>
+      </div>  
+      <div class="skill">
+        <img src="https://cdn-icons-png.flaticon.com/512/518/518713.png"/>
+        <h6>Linux</h6>
+        <p>9 months experience</p>
       </div>  
     </div>
     </div>
@@ -105,6 +142,54 @@
         </div>
     </div>
   </section>
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Aarav has shown exceptional dedication and enthusiasm for web development. 
+        He has a strong work ethic and consistently seeks to expand his skills. 
+        A quick learner, he effectively collaborates within teams, always striving for excellence.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        It's been a pleasure working with Aarav. He demonstrates a deep understanding of web technologies 
+        and consistently delivers high-quality solutions. His attention to detail and problem-solving skills 
+        make him a valuable asset to any project.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        I had the privilege of collaborating with Aarav on a web development initiative. 
+        His technical knowledge and proactive approach significantly contributed to the project's success. 
+        Aarav's dedication and expertise are commendable.
+        <span>&#8221;</span>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="flex_center">
+        <fieldset>
+            <legend class="introduction">Leave a Recommendation</legend>
+
+            <div class="input-group">
+                <label for="name">Name (Optional)</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            
+            <div class="input-group">
+                <label for="new_recommendation">Message</label>
+                <textarea id="new_recommendation" cols="50" rows="5" placeholder="Enter your recommendation"></textarea>
+            </div>
+
+            <div class="flex_center btn-container">
+                <button id="recommend_btn" onclick="addRecommendation(); showPopup(true);">Submit</button>
+            </div>
+        </fieldset>
+    </div>
+</section>
 
   
 
@@ -115,6 +200,32 @@
       <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
     </svg>
   </a>
+  <div class="popup" id="popup" class="flex_center">
+    <img src="html_finalprojimages/checkmark--outline.svg"/>
+    <h3><!-- Add appropriate text here-->Thanks for leaving a recommendation</h3>
+    <button onclick="showPopup(true)">Ok</button>
+  </div>
+  <footer>
+    <div class="footer-container">
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aarav-pant-033258245/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/panta3" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- Add other social media links if needed -->
+        </div>
+
+        <!-- Resume Download -->
+        <div class="resume-download">
+            <a href="path-to-your-resume.pdf" download="YourName-Resume.pdf">Download My Resume</a>
+        </div>
+
+
+    </div>
+</footer>
 
 
 </body>
