@@ -175,6 +175,9 @@
   font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
 }
+.recommendations:hover{
+  transform: scale(1.05);
+}
 
 /* Scroll to Top Button */
 .scroll-to-top-button {
