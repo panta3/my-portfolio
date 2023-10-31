@@ -68,10 +68,29 @@ function updateExperience() {
       if (experience === '') {
         experience = 'Less than a month';
       }
-      skill.querySelector('.experience').textContent = experience;
+      skill.querySelector('.experience').textContent = experience + ' experience';
     }
   });
 }
 
 document.addEventListener('DOMContentLoaded', updateExperience);
+function fadeInOnScroll() {
+  const fadeInElements = document.querySelectorAll('.fade-in');
+  
+  fadeInElements.forEach(element => {
+    const rect = element.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+    
+    if (isVisible) {
+      element.classList.add('fade-in-visible');
+    } else {
+      element.classList.remove('fade-in-visible');
+    }
+  });
+}
+
+document.addEventListener('scroll', fadeInOnScroll);
+
+// Call the function initially to ensure elements are visible if they're already in view
+fadeInOnScroll();
 
